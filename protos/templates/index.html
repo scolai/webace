@@ -6,47 +6,105 @@
 </head>
 
     <style>
-        #container {
-            font-family: Arial;
-            font-size: 16px;
-            display: block;
+        body {
+            background-color: #BED0F7;
+            width: 1280px;
         }
         
-        #header {
+        #wrapper {
+            width: 960px;
+            background-color: #ffffff;
+            padding: 35px 25px;
+            font-family: Arial;
+        }
+        
+        h1 {
+            font-size: 48px;
+            line-height: 60px;
+            float: left;
+        }
+        
+        .container_row {
+            margin: 25px 0 0;
+        }
+        
+        .header {
             border-top: 3px solid #D9E2EC;
             border-bottom: 3px solid #D9E2EC;
             background-color: #F0F4F8;
             padding: 10px 0;
         }
         
-        #header ul li {
+        .description {
+            font-size: 16px;
+        }
+        
+        ul {
+            list-style-type: none;
+            width: 960px;
+            height: 35px;
+        }
+        
+        ul li {
             display: inline;
         }
+        
+        
     </style>
 
     <body>
         <!-- this template uses display inline to match the layout of Refactoring UI Component Gallery -->
         
-        <div id="container">
-            <div class="header>
-                  >Description</
-                  Primary
-                  Secondary         
-            </div>
-            <div class="components">
-                <div id="header">
+        <div id="wrapper">
+            <h1>Buttons</h1>
+            <div id="container">
+                <div class="header>
                     <ul>
-                        <li>Description text</li>
-                        <li>Item</li>
+                        <li>Description</li>
+                        <li>Primary</li>
+                        <li>Secondary</li>       
+                </div>
+                <div class="container_row">     <!-- first row -->
+                    <ul>
+                        <li class="description">Small rounded</li>
+                        <li>Primary</li>
+                        <li>
+                            <ul>
+                                <li>Option A</li>
+                                <li>Option B</li>
+                                <li>Option C</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                Option A
-                Option B
-                Option C
-                
-            </div>
-        </div>
-        
+                <div class="container_row">     <!-- second row -->
+                    <ul>
+                        <li>Small rounded</li>
+                        <li>Primary</li>
+                        <li>
+                            <ul>
+                                <li>Option A</li>
+                                <li>Option B</li>
+                                <li>Option C</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="container_row">     <!-- last row -->
+                    <ul>
+                        <li>Small rounded</li>
+                        <li>Primary</li>
+                        <li>
+                            <ul>
+                                <li>Option A</li>
+                                <li>Option B</li>
+                                <li>Option C</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>  <!-- /container -->
+        <div>       <!-- /wrapper -->
 
     </body>
 
